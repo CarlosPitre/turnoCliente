@@ -1,0 +1,30 @@
+#floating-panel {
+  position: absolute;
+  top: 250px;
+  left: 0%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  line-height: 30px;
+  padding-left: 10px;
+  width: 50%;
+  height: 20px;
+} 
+
+.imagenSucursales {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  color: white;
+  border-radius: 40px;
+  float: left;
+  text-align: center;
+  font-size: 12;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+}

@@ -1,0 +1,36 @@
+<ion-view title="Sucursales" id="page2" class=" ">
+    <ion-content padding="" class="has-header">
+    	
+	        
+	        
+    	<div id="map" style=" position: relative;float: left; width: 100%;height: 300px"></div>
+    	<!---->
+
+        <div class="list">
+			<label class="item item-input item-select">
+			<div class="input-label">
+				Servicio
+			</div>
+				<select ng-init="idServicio = Servicios[0].id"  id="mode" ng-model = "idServicio">
+					<option ng-repeat="servicio in Servicios" value="{{servicio.id}}">{{servicio.nombre}}</option>
+				</select>
+			</label>
+		</div>
+
+		<div class="list">
+			<a class="item " href="#" ng-repeat="sucursal in Sucursales">
+				<div class="imagenSucursales" >
+                	{{$index + 1}}
+                </div>
+				<h2>{{sucursal.nombre}}</h2>
+				{{sucursal.direccion}}
+				<button class="button button-small button-assertive item-note">
+				  Galeria
+				</button>
+			</a>
+		</div>
+          
+
+
+    </ion-content>
+</ion-view>

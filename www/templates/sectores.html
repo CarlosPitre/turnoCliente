@@ -1,0 +1,11 @@
+<ion-view title="Sectores" id="page1" class=" ">
+    <ion-content padding="true" class="has-header">
+        <ion-list id="sectores-list2" class=" ">
+            <ion-item class="item-avatar  " id="sectores-list-item10" ui-sref="menu.sucursales" ng-repeat="sector in Sectores" ng-click="getEmpresas(sector)">
+                <img src="http://localhost/proyectoTurnos/api/{{sector.logo}}">
+                <h2>{{sector.nombre}}</h2>
+                <p>{{sector.descripcion}}</p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
