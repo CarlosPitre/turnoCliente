@@ -7,8 +7,8 @@ angular.module('app.routes', [])
   // Set up the various states which the app can be in.
   // Each state's controller can be found in controllers.js
   $stateProvider
-    
-  
+
+
 
       .state('menu.sectores', {
     url: '/page1',
@@ -56,8 +56,20 @@ angular.module('app.routes', [])
     }
   })
 
+ .state('menu.reservas',{
+    url : '/reservas',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/reservas.html',
+        controller: 'reservasCtrl'
+      }
+    }
+  })
+
 $urlRouterProvider.otherwise('/side-menu21/page1')
 
-  
+
+
+
 
 });

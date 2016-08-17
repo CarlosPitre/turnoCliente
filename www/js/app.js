@@ -6,7 +6,7 @@
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
 
-var uri = "http://wwww.turnomovil.com/api"
+var uri = "http://www.turnomovil.com/api";
 angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services', 'app.directives'])
 
 .run(function($ionicPlatform) {

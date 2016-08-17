@@ -1,0 +1,41 @@
+<ion-view title="Reservas" id="page3" class=" ">
+    <ion-content padding="true" class="has-header">
+
+      <div class="">
+        <h3>Reserva</h3>
+        <p>
+          Selecciona la fecha de tu reserva
+        </p>
+      </div>
+
+      <div class="list">
+        <div class="item item-input-inset">
+          <label class="item-input-wrapper">
+            <input type="date" ng-model="serv.fechaInicio">
+          </label>
+          <a href="javascript:;" class="button button-small button-assertive" ng-click= "buscarHoras()">Buscar</a>
+        </div>
+
+      </div>
+
+      <div class="list">
+          <div class="item" ng-repeat = "hora in arrayHoras">
+            <ion-item class="item" ng-click="getEmpleadosDisponibles(hora)" ng-class="{active: visible}">
+                <i class="icon" ng-class="hora.status ? 'ion-minus' : 'ion-plus'"></i>
+                &nbsp;
+                <strong>{{hora.hora}}</strong>
+            </ion-item>
+            <ion-item class="item-accordion" ng-show="hora.status" style="margin:0;padding:0;">
+                <div class="card" style="padding:0;margin: 0;border: 1px;">
+                    <div class="list">
+                      <div class="item" ng-repeat = "empleado in EmpleadosDisponibles" ng-click= "post(hora.hora,empleado.id)">
+                        <a href="javascript:;" class="item">{{empleado.nombre}}</a>
+                      </div>
+                    </div>
+                </div>
+            </ion-item>
+          </div>
+      </div>
+
+    </ion-content>
+</ion-view>

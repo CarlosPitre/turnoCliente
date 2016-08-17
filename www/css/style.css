@@ -10,7 +10,7 @@
   padding-left: 10px;
   width: 50%;
   height: 20px;
-} 
+}
 
 .imagenSucursales {
   width: 40px;
@@ -26,5 +26,20 @@
   justify-content: center;
   align-content: center;
   flex-direction: column;
+}
 
+.imagePhone{
+  background-image: url("../img/celular3.png");
+  background-repeat:no-repeat;
+  background-position: center;
+  height: 640px;
+}
+
+.divInterno{
+  height: 512px;
+  width: 325px;
+  margin-left: 35px;
+  margin-top: 47px;
+  overflow: scroll;
+  background-color: white;
 }
